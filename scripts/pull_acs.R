@@ -29,10 +29,10 @@ api.key <- "[Your API Key]"
 url <- "https://api.census.gov/data/"
 dataset <- "acs/acs5?"
 year <- "2019"
-var_list <- c("B01001_001E", "B06011_001E") # Comma separated list of ACS variables 
+var_list <- c("B01001_001E") # Comma separated list of ACS variables 
 geo <- "state:*" # pull data for each individual state
 
-# Load Data ---------------------------------------------------------------
+# Pull Data ---------------------------------------------------------------
 
 site <- paste0(
   url,
@@ -48,11 +48,8 @@ json <- httr::content(r, as = "text", encoding = "UTF-8")
 
 list.json <- jsonlite::fromJSON(json)
 
-# Convert to a dataframe, transpose, and convert the resulting matrix back to a dataframe
-df <- as.data.frame(t(as.data.frame(list.json, stringsAsFactors = F)), stringsAsFactors = F)
-
-# Strip out the rownames
-rownames(df)<-NULL
+# Convert to a tibble
+df <- as_tibble(list.json)
 
 # Use first row as headers
 colnames(df) <- NULL
@@ -62,13 +59,6 @@ header.names <- as.vector(header.names, mode = "character")
  
 names(df) <-  df[1, ] # the first row will be the header
 df  <-  df[-1, ]          # removing the first row.
-
-# Convert to Tidy Format --------------------------------------------------
-
-df_long <- df %>% 
-  pivot_longer(-NAME, names_to = "geo") %>% 
-  rename("variable" = "NAME") %>% 
-  select(geo, variable, value)
 
 # Write out ---------------------------------------------------------------
 
