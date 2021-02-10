@@ -15,7 +15,6 @@
 
 library(httr)
 library(jsonlite)
-library(xts)
 library(dplyr)
 library(tidyr)
 library(readr)
