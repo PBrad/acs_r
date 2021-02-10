@@ -29,7 +29,7 @@ api.key <- "[Your API Key]"
 url <- "https://api.census.gov/data/"
 dataset <- "acs/acs5?"
 year <- "2019"
-var_list <- c("B01001_001E") # Comma separated list of ACS variables 
+var_list <- c("B01001_001E", "B06011_001E") # Comma separated list of ACS variables 
 geo <- "state:*" # pull data for each individual state
 
 # Pull Data ---------------------------------------------------------------
@@ -62,4 +62,4 @@ df  <-  df[-1, ]          # removing the first row.
 
 # Write out ---------------------------------------------------------------
 
-write_csv(df_long, "res/census.csv")
+write_csv(df, "res/census.csv")
