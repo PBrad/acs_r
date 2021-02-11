@@ -44,21 +44,20 @@ site <- paste0(
 
 r <- GET(site)  
 
-json <- httr::content(r, as = "text", encoding = "UTF-8")
+json <- content(r, as = "text", encoding = "UTF-8")
 
-list.json <- jsonlite::fromJSON(json)
+list.json <- fromJSON(json)
 
 # Convert to a tibble
-df <- as_tibble(list.json)
+df <- as_tibble(list.json, .name_repair = "minimal")
 
 # Use first row as headers
-colnames(df) <- NULL
+header_names <- as.vector(df[1,], mode = "character")
 
-header.names <- df[1,]
-header.names <- as.vector(header.names, mode = "character")
- 
-names(df) <-  df[1, ] # the first row will be the header
-df  <-  df[-1, ]          # removing the first row.
+names(df) <-  header_names
+
+# Drop first row (that contained header values)
+df <-  df[-1, ] 
 
 # Write out ---------------------------------------------------------------
 

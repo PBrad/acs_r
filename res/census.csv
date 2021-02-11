@@ -1,157 +1,53 @@
-geo,variable,value
-Alabama,B01001_001E,4876250
-Alaska,B01001_001E,737068
-Arizona,B01001_001E,7050299
-Arkansas,B01001_001E,2999370
-California,B01001_001E,39283497
-Colorado,B01001_001E,5610349
-Delaware,B01001_001E,957248
-District of Columbia,B01001_001E,692683
-Connecticut,B01001_001E,3575074
-Florida,B01001_001E,20901636
-Georgia,B01001_001E,10403847
-Idaho,B01001_001E,1717750
-Hawaii,B01001_001E,1422094
-Illinois,B01001_001E,12770631
-Indiana,B01001_001E,6665703
-Iowa,B01001_001E,3139508
-Kansas,B01001_001E,2910652
-Kentucky,B01001_001E,4449052
-Louisiana,B01001_001E,4664362
-Maine,B01001_001E,1335492
-Maryland,B01001_001E,6018848
-Massachusetts,B01001_001E,6850553
-Michigan,B01001_001E,9965265
-Minnesota,B01001_001E,5563378
-Mississippi,B01001_001E,2984418
-Missouri,B01001_001E,6104910
-Montana,B01001_001E,1050649
-Nebraska,B01001_001E,1914571
-Nevada,B01001_001E,2972382
-New Hampshire,B01001_001E,1348124
-New Jersey,B01001_001E,8878503
-New Mexico,B01001_001E,2092454
-New York,B01001_001E,19572319
-North Carolina,B01001_001E,10264876
-North Dakota,B01001_001E,756717
-Ohio,B01001_001E,11655397
-Oklahoma,B01001_001E,3932870
-Oregon,B01001_001E,4129803
-Pennsylvania,B01001_001E,12791530
-Rhode Island,B01001_001E,1057231
-South Carolina,B01001_001E,5020806
-South Dakota,B01001_001E,870638
-Tennessee,B01001_001E,6709356
-Texas,B01001_001E,28260856
-Vermont,B01001_001E,624313
-Utah,B01001_001E,3096848
-Virginia,B01001_001E,8454463
-Washington,B01001_001E,7404107
-West Virginia,B01001_001E,1817305
-Wisconsin,B01001_001E,5790716
-Wyoming,B01001_001E,581024
-Puerto Rico,B01001_001E,3318447
-Alabama,B06011_001E,26231
-Alaska,B06011_001E,34018
-Arizona,B06011_001E,30216
-Arkansas,B06011_001E,25758
-California,B06011_001E,31960
-Colorado,B06011_001E,35887
-Delaware,B06011_001E,33628
-District of Columbia,B06011_001E,49542
-Connecticut,B06011_001E,37865
-Florida,B06011_001E,27936
-Georgia,B06011_001E,29958
-Idaho,B06011_001E,27243
-Hawaii,B06011_001E,35515
-Illinois,B06011_001E,32495
-Indiana,B06011_001E,30005
-Iowa,B06011_001E,31707
-Kansas,B06011_001E,31017
-Kentucky,B06011_001E,26653
-Louisiana,B06011_001E,26295
-Maine,B06011_001E,29808
-Maryland,B06011_001E,40341
-Massachusetts,B06011_001E,37886
-Michigan,B06011_001E,29672
-Minnesota,B06011_001E,36076
-Mississippi,B06011_001E,24509
-Missouri,B06011_001E,29649
-Montana,B06011_001E,28409
-Nebraska,B06011_001E,31933
-Nevada,B06011_001E,31206
-New Hampshire,B06011_001E,35807
-New Jersey,B06011_001E,38238
-New Mexico,B06011_001E,25881
-New York,B06011_001E,33562
-North Carolina,B06011_001E,28836
-North Dakota,B06011_001E,35499
-Ohio,B06011_001E,30171
-Oklahoma,B06011_001E,27637
-Oregon,B06011_001E,30710
-Pennsylvania,B06011_001E,31099
-Rhode Island,B06011_001E,32256
-South Carolina,B06011_001E,27366
-South Dakota,B06011_001E,31033
-Tennessee,B06011_001E,27607
-Texas,B06011_001E,30596
-Vermont,B06011_001E,31492
-Utah,B06011_001E,30801
-Virginia,B06011_001E,35421
-Washington,B06011_001E,35989
-West Virginia,B06011_001E,25320
-Wisconsin,B06011_001E,32009
-Wyoming,B06011_001E,31974
-Puerto Rico,B06011_001E,NA
-Alabama,state,01
-Alaska,state,02
-Arizona,state,04
-Arkansas,state,05
-California,state,06
-Colorado,state,08
-Delaware,state,10
-District of Columbia,state,11
-Connecticut,state,09
-Florida,state,12
-Georgia,state,13
-Idaho,state,16
-Hawaii,state,15
-Illinois,state,17
-Indiana,state,18
-Iowa,state,19
-Kansas,state,20
-Kentucky,state,21
-Louisiana,state,22
-Maine,state,23
-Maryland,state,24
-Massachusetts,state,25
-Michigan,state,26
-Minnesota,state,27
-Mississippi,state,28
-Missouri,state,29
-Montana,state,30
-Nebraska,state,31
-Nevada,state,32
-New Hampshire,state,33
-New Jersey,state,34
-New Mexico,state,35
-New York,state,36
-North Carolina,state,37
-North Dakota,state,38
-Ohio,state,39
-Oklahoma,state,40
-Oregon,state,41
-Pennsylvania,state,42
-Rhode Island,state,44
-South Carolina,state,45
-South Dakota,state,46
-Tennessee,state,47
-Texas,state,48
-Vermont,state,50
-Utah,state,49
-Virginia,state,51
-Washington,state,53
-West Virginia,state,54
-Wisconsin,state,55
-Wyoming,state,56
-Puerto Rico,state,72
+NAME,B01001_001E,B06011_001E,state
+Alabama,4876250,26231,01
+Alaska,737068,34018,02
+Arizona,7050299,30216,04
+Arkansas,2999370,25758,05
+California,39283497,31960,06
+Colorado,5610349,35887,08
+Delaware,957248,33628,10
+District of Columbia,692683,49542,11
+Connecticut,3575074,37865,09
+Florida,20901636,27936,12
+Georgia,10403847,29958,13
+Idaho,1717750,27243,16
+Hawaii,1422094,35515,15
+Illinois,12770631,32495,17
+Indiana,6665703,30005,18
+Iowa,3139508,31707,19
+Kansas,2910652,31017,20
+Kentucky,4449052,26653,21
+Louisiana,4664362,26295,22
+Maine,1335492,29808,23
+Maryland,6018848,40341,24
+Massachusetts,6850553,37886,25
+Michigan,9965265,29672,26
+Minnesota,5563378,36076,27
+Mississippi,2984418,24509,28
+Missouri,6104910,29649,29
+Montana,1050649,28409,30
+Nebraska,1914571,31933,31
+Nevada,2972382,31206,32
+New Hampshire,1348124,35807,33
+New Jersey,8878503,38238,34
+New Mexico,2092454,25881,35
+New York,19572319,33562,36
+North Carolina,10264876,28836,37
+North Dakota,756717,35499,38
+Ohio,11655397,30171,39
+Oklahoma,3932870,27637,40
+Oregon,4129803,30710,41
+Pennsylvania,12791530,31099,42
+Rhode Island,1057231,32256,44
+South Carolina,5020806,27366,45
+South Dakota,870638,31033,46
+Tennessee,6709356,27607,47
+Texas,28260856,30596,48
+Vermont,624313,31492,50
+Utah,3096848,30801,49
+Virginia,8454463,35421,51
+Washington,7404107,35989,53
+West Virginia,1817305,25320,54
+Wisconsin,5790716,32009,55
+Wyoming,581024,31974,56
+Puerto Rico,3318447,NA,72
