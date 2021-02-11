@@ -34,6 +34,7 @@ geo <- "state:*" # pull data for each individual state
 
 # Pull Data ---------------------------------------------------------------
 
+# Builds the GET request
 site <- paste0(
   url,
   year, "/",
@@ -42,8 +43,10 @@ site <- paste0(
   "for=", geo, "&",
   "key=", api.key)
 
+# Request
 r <- GET(site)  
 
+# Extract content text
 json <- content(r, as = "text", encoding = "UTF-8")
 
 list.json <- fromJSON(json)
